@@ -13,3 +13,7 @@
 #success_message{
   display: none;
 }
+
+#video {
+  z-index: 100%;
+}
