@@ -1,3 +1,30 @@
+<?php
+
+if($_POST["submit"]) {
+    $recipient="armanisanI@gmail.com";
+    $subject="Form to email message";
+    $sender=$_POST["name"];
+    $senderEmail=$_POST["email"];
+    $message=$_POST["comment"];
+    $number=$_POST["phone"];
+    $company=$_POST["company"];
+    $city=$_POST["city"];
+    $state=$_POST["state"];
+    $zip=$_POST["zip"];
+    $site=$_POST["website"];
+    $hire=$_POST["radio"];
+
+
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\nNumber: $number\nCompany: $company\nCity: $city $state $zip\nSite: $site\nLooking to hire?: $hire\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?>
+
  <!DOCTYPE html>
 <html>
   <head>
@@ -5,28 +32,40 @@
     <title>Arman Sani</title>
   </head>
   <link href="./index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 
   <body>
     <div id="header">
-      <img id="profile" style="width: 200px; border-radius: 50%; margin: 0 43%" src="./images/me.jpg" alt="" />
-      <img id="scope"src="/aim2.png" style="opacity: 0;width: 250px; position: absolute; left: 0 "alt="" />
-      <h1 style="">Arman Sani - Full Stack Web Developer</h1>
-      <video id="video"src="https://www.youtube.com/watch?v=qREKP9oijWI" autoplay poster="posterimage.jpg">
+      <video class="embed-responsive-item" autoplay loop muted id="video" src="./videos/background.mp4" >
+
 
       </video>
+
+      <img id="profile" style="width: 200px; border-radius: 50%; margin: 0 43%" src="./images/me.jpg" alt="" />
+
+      <img id="scope"src="/aim2.png" style="opacity: 0;width: 250px; position: absolute; left: 0 "alt="" />
+      <h1 style="color: white">Arman Sani - Full Stack Web Developer</h1>
+
     </div>
+    <div style="background: white">
     <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
         <p id="home" class="navbar-text">Arman Sani</p>
-        <button id="project1" type="button" class="btn btn-default navbar-btn">Project 1</button>
+   <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+     Dropdown <span class="caret"></span>
+   </a>
+   <ul class="dropdown-menu">
+     ...
+   </ul>
+        <button id="project1" type="button" class="btn btn-default navbar-btn">Survive Game</button>
         <button id="project2" type="button" class="btn btn-default navbar-btn">Project 2</button>
         <button id="project3" type="button" class="btn btn-default navbar-btn">Project 3</button>
         <button id="project4" type="button" class="btn btn-default navbar-btn">Project 4</button>
       </div>
     </nav>
+
     <div class="container">
       <div id="p1">
       <h1 style="text-align: center"> About me</h1>
@@ -199,7 +238,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
     <div class="footer">
       <div class="container">
 
-          <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+          <form class="well form-horizontal" action=" " method="post" action="contact.php" id="contact_form">
       <fieldset>
 
       <!-- Form Name -->
@@ -208,26 +247,15 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
       <!-- Text input-->
 
       <div class="form-group">
-        <label class="col-md-4 control-label">First Name</label>
+        <label class="col-md-4 control-label">Full Name</label>
         <div class="col-md-4 inputGroupContainer">
         <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-        <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+        <input  name="name" placeholder="Full Name" class="form-control"  type="text">
           </div>
         </div>
       </div>
 
-      <!-- Text input-->
-
-      <div class="form-group">
-        <label class="col-md-4 control-label" >Last Name</label>
-          <div class="col-md-4 inputGroupContainer">
-          <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-        <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
-          </div>
-        </div>
-      </div>
 
       <!-- Text input-->
              <div class="form-group">
@@ -260,7 +288,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
           <div class="col-md-4 inputGroupContainer">
           <div class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-        <input name="address" placeholder="Company" class="form-control" type="text">
+        <input name="company" placeholder="Company" class="form-control" type="text">
           </div>
         </div>
       </div>
@@ -396,7 +424,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
 
       <!-- Success message -->
       <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting me, i will get back to you shortly.</div>
-
+      <?=$thankYou ?>
       <!-- Button -->
       <div class="form-group">
         <label class="col-md-4 control-label"></label>
@@ -404,17 +432,13 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
           <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
         </div>
       </div>
-      <form action="mailto:armanisani@gmail.com" method="post" enctype="text/plain" >
-          FirstName:<input type="text" name="FirstName">
-          Email:<input type="text" name="Email">
-          <input type="submit" name="submit" value="Submit">
-      </form>
 
       </fieldset>
       </form>
       </div>
           </div><!-- /.container -->
     </div>
+  </div>
   </div>
 
 
@@ -465,6 +489,9 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
         $('#p4').hide()
         $('#p5').show()
       })
+
+      $('.dropdown-toggle').dropdown()
+
         // profile.animate({left: "60%"}, 2000).animate({left:"20%"}, 2000).animate({left: "40%"}, 2000, function(){
         //   scope.animate({opacity: 1, left: "40%"}, 2000, function(){
         //     header.css("background", "red")
