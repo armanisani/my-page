@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 if($_POST["submit"]) {
     $recipient="armanisanI@gmail.com";
@@ -23,7 +23,7 @@ if($_POST["submit"]) {
     $thankYou="<p>Thank you! Your message has been sent.</p>";
 }
 
-?>
+?> -->
 
  <!DOCTYPE html>
 <html>
@@ -53,12 +53,18 @@ if($_POST["submit"]) {
     <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
         <p id="home" class="navbar-text">Arman Sani</p>
-   <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-     Dropdown <span class="caret"></span>
-   </a>
-   <ul class="dropdown-menu">
-     ...
-   </ul>
+        <ul class="nav nav-tabs">
+          ...
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              Dropdown <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              ...
+            </ul>
+          </li>
+          ...
+        </ul>
         <button id="project1" type="button" class="btn btn-default navbar-btn">Survive Game</button>
         <button id="project2" type="button" class="btn btn-default navbar-btn">Project 2</button>
         <button id="project3" type="button" class="btn btn-default navbar-btn">Project 3</button>
@@ -238,7 +244,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
     <div class="footer">
       <div class="container">
 
-          <form class="well form-horizontal" action=" " method="post" action="contact.php" id="contact_form">
+          <form action="mailto:armanisani@gmail.com" class="well form-horizontal" action=" " method="post" id="contact_form">
       <fieldset>
 
       <!-- Form Name -->
