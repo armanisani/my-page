@@ -54,21 +54,21 @@ if($_POST["submit"]) {
       <div class="container">
         <p id="home" class="navbar-text">Arman Sani</p>
         <ul class="nav nav-tabs">
-          ...
           <li role="presentation" class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              Dropdown <span class="caret"></span>
+              Projects <span class="caret"></span>
             </a>
-            <ul class="dropdown-menu">
-              ...
+            <ul style="text-align: center" class="dropdown-menu">
+              <li><a id="project1" type="button" class="dropdown-item btn btn-default navbar-btn">Survive Game</a></li>
+              <li><a id="project2" type="a" class="dropdown-item btn btn-default navbar-btn">cArt</a></li>
+              <li><a id="project3" type="a" class="dropdown-item btn btn-default navbar-btn">Skedj</a></li>
+              <li><a id="project4" type="a" class="dropdown-item btn btn-default navbar-btn">Cart mobile-app</a></li>
             </ul>
           </li>
-          ...
-        </ul>
-        <button id="project1" type="button" class="btn btn-default navbar-btn">Survive Game</button>
-        <button id="project2" type="button" class="btn btn-default navbar-btn">Project 2</button>
-        <button id="project3" type="button" class="btn btn-default navbar-btn">Project 3</button>
-        <button id="project4" type="button" class="btn btn-default navbar-btn">Project 4</button>
+          <button type="button" class="navbar-btn btn btn-default " name="button">Contact</button>
+
+          </ul>
+
       </div>
     </nav>
 
@@ -244,7 +244,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
     <div class="footer">
       <div class="container">
 
-          <form action="mailto:armanisani@gmail.com" class="well form-horizontal" action=" " method="post" id="contact_form">
+          <form action="mailto:armanisani@gmail.com?subject=&body=comment%0D%0A" ENCTYPE="text/plain" class="well form-horizontal" action=" " method="post" id="contact_form">
       <fieldset>
 
       <!-- Form Name -->
@@ -257,7 +257,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
         <div class="col-md-4 inputGroupContainer">
         <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-        <input  name="name" placeholder="Full Name" class="form-control"  type="text">
+        <input  name="Full Name" placeholder="Full Name" class="form-control"  type="text">
           </div>
         </div>
       </div>
@@ -269,7 +269,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
           <div class="col-md-4 inputGroupContainer">
           <div class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-        <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+        <input name="Email" placeholder="E-Mail Address" class="form-control"  type="text">
           </div>
         </div>
       </div>
@@ -282,7 +282,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
           <div class="col-md-4 inputGroupContainer">
           <div class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-        <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+        <input name="Phone" placeholder="(845)555-1212" class="form-control" type="text">
           </div>
         </div>
       </div>
@@ -294,7 +294,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
           <div class="col-md-4 inputGroupContainer">
           <div class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-        <input name="company" placeholder="Company" class="form-control" type="text">
+        <input name="Company" placeholder="Company" class="form-control" type="text">
           </div>
         </div>
       </div>
@@ -306,7 +306,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
           <div class="col-md-4 inputGroupContainer">
           <div class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-        <input name="city" placeholder="City" class="form-control"  type="text">
+        <input name="City" placeholder="City" class="form-control"  type="text">
           </div>
         </div>
       </div>
@@ -318,7 +318,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
           <div class="col-md-4 selectContainer">
           <div class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-          <select name="state" class="form-control selectpicker" >
+          <select name="State" class="form-control selectpicker" >
             <option value=" " >Please select your state</option>
             <option>Alabama</option>
             <option>Alaska</option>
@@ -383,7 +383,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
           <div class="col-md-4 inputGroupContainer">
           <div class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-        <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
+        <input name="Zipcode" placeholder="Zip Code" class="form-control"  type="text">
           </div>
       </div>
       </div>
@@ -394,7 +394,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
          <div class="col-md-4 inputGroupContainer">
           <div class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
-        <input name="website" placeholder="Website or domain name" class="form-control" type="text">
+        <input name="Website" placeholder="Website or domain name" class="form-control" type="text">
           </div>
         </div>
       </div>
@@ -405,12 +405,12 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
                               <div class="col-md-4">
                                   <div class="radio">
                                       <label>
-                                          <input type="radio" name="hosting" value="yes" /> Yes
+                                          <input type="radio" name="Hire" value="yes" /> Yes
                                       </label>
                                   </div>
                                   <div class="radio">
                                       <label>
-                                          <input type="radio" name="hosting" value="no" /> No
+                                          <input type="radio" name="Hire" value="no" /> No
                                       </label>
                                   </div>
                               </div>
@@ -423,7 +423,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
           <div class="col-md-4 inputGroupContainer">
           <div class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-              	<textarea class="form-control" name="comment" placeholder="Message Description"></textarea>
+              	<textarea class="form-control" name="Message" placeholder="Message Description"></textarea>
         </div>
         </div>
       </div>
@@ -627,5 +627,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
 
 
     </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   </body>
 </html>
