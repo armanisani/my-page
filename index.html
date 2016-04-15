@@ -47,7 +47,7 @@ if($_POST["submit"]) {
   </div>
     <div id="header">
 
-      <video class="embed-responsive-item" controls="controls" autoplay loop muted id="video" src="./videos/background.mp4" >
+      <video style="margin-top: 60px;"class="embed-responsive-item" controls="controls" autoplay loop muted id="video" src="./videos/background.mp4" >
 
 
       </video>
@@ -58,24 +58,34 @@ if($_POST["submit"]) {
 
     </div>
     <div style="background: white">
-    <nav style="width: 100%"class="btn-group navbar navbar-default navbar-static-top">
-      <div class="container">
-        <p id="home" class="navbar-text">Arman Sani</p>
-          <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Projects
-            </button>
-            <div style="text-align: center" class="dropdown-menu">
-            <a id="project1" type="button" class="dropdown-item btn btn-primary navbar-btn">Project 1 | Survive Game</a>
-            <a id="project2" type="a" class="dropdown-item btn btn-primary navbar-btn">Project 2 | Cart</a>
-            <a id="project3" type="a" class="dropdown-item btn btn-primary navbar-btn">Project 3 | Skedj</a>
-            <a id="project4" type="a" class="dropdown-item btn btn-primary navbar-btn">Project 4 | Cart mobile-app</a>
-            </div>
-            <button id="skill" type="button" class="navbar-btn btn btn-default " name="button">Skills</button>
-            <button id="contact" type="button" class="navbar-btn btn btn-default " name="button">Contact</button>
+      <div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container-fluid">
+              <div id="home" class="words navbar-header"><a class="navbar-brand" href="#">Arman Sani</a>
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                  </button>
+              </div>
+              <div class="collapse navbar-collapse navbar-menubuilder">            <ul class="nav navbar-nav navbar-right">
+              <li><button type="button" class="btn navbar-btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Projects
+                  </button>
+                <div style="text-align: center" class="dropdown-menu">
+                <a id="project1" type="button" class="dropdown-item btn btn-primary navbar-btn">Project 1 | Survive Game</a>
+                <a id="project2" type="a" class="dropdown-item btn btn-primary navbar-btn">Project 2 | Cart</a>
+                <a id="project3" type="a" class="dropdown-item btn btn-primary navbar-btn">Project 3 | Skedj</a>
+                <a id="project4" type="a" class="dropdown-item btn btn-primary navbar-btn">Project 4 | Cart mobile-app</a>
+                </div>
+                </li>
+                <li><button id="skill" type="button" class="navbar-btn btn btn-primary " name="button">Skills</button>
+                </li>
+                <li><button id="contact" type="button" class="navbar-btn btn btn-primary " name="button">Contact</button>
+                </li>
+            </ul>
 
 
+              </div>
+          </div>
       </div>
-    </nav>
+
 
     <div class="container">
 <!-- ///////////////////////////////////////////////////// About me /////////////////////////////////////////////////////////////////////////////////////////////////// -->
