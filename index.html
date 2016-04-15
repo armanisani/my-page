@@ -38,60 +38,61 @@ if($_POST["submit"]) {
 
   <body>
     <div id="header">
+
       <video class="embed-responsive-item" autoplay loop muted id="video" src="./videos/background.mp4" >
 
 
       </video>
 
-      <img id="profile" style="width: 200px; border-radius: 50%; margin: 0 43%" src="./images/me.jpg" alt="" />
-
-      <img id="scope"src="/aim2.png" style="opacity: 0;width: 250px; position: absolute; left: 0 "alt="" />
-      <h1 style="color: white">Arman Sani - Full Stack Web Developer</h1>
+      <img id="profile" src="./images/me.jpg" alt="" />
+      <h1 style="color: white; position: absolute; top: 400px; text-align: center">Arman Sani - Full Stack Web Developer</h1>
 
     </div>
     <div style="background: white">
-    <nav class="navbar navbar-default navbar-static-top">
+    <nav style="width: 100%"class="btn-group navbar navbar-default navbar-static-top">
       <div class="container">
         <p id="home" class="navbar-text">Arman Sani</p>
-        <ul class="nav nav-tabs">
-          <li role="presentation" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              Projects <span class="caret"></span>
-            </a>
-            <ul style="text-align: center" class="dropdown-menu">
-              <li><a id="project1" type="button" class="dropdown-item btn btn-default navbar-btn">Survive Game</a></li>
-              <li><a id="project2" type="a" class="dropdown-item btn btn-default navbar-btn">cArt</a></li>
-              <li><a id="project3" type="a" class="dropdown-item btn btn-default navbar-btn">Skedj</a></li>
-              <li><a id="project4" type="a" class="dropdown-item btn btn-default navbar-btn">Cart mobile-app</a></li>
-            </ul>
-          </li>
-          <button type="button" class="navbar-btn btn btn-default " name="button">Contact</button>
+          <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Projects
+            </button>
+            <div style="text-align: center" class="dropdown-menu">
+            <a id="project1" type="button" class="dropdown-item btn btn-primary navbar-btn">Project 1 | Survive Game</a>
+            <a id="project2" type="a" class="dropdown-item btn btn-primary navbar-btn">Project 2 | Cart</a>
+            <a id="project3" type="a" class="dropdown-item btn btn-primary navbar-btn">Project 3 | Skedj</a>
+            <a id="project4" type="a" class="dropdown-item btn btn-primary navbar-btn">Project 4 | Cart mobile-app</a>
+            </div>
+          <button id="contact" type="button" class="navbar-btn btn btn-default " name="button">Contact</button>
 
-          </ul>
 
       </div>
     </nav>
 
     <div class="container">
+<!-- ///////////////////////////////////////////////////// About me /////////////////////////////////////////////////////////////////////////////////////////////////// -->
       <div id="p1">
       <h1 style="text-align: center"> About me</h1>
       <p>
-        I want to be a JR full-stack developer with a focus on ruby-on-rails, javascript, and html/css. In the future i hope to work with a company with a product i can stand by, a team i can work with, and a company that can take my skills from a junior level to a senior level. </p>
+        I want to be a Full-Stack Developer with a focus on Ruby-on-Rails, Javascript, and HTML/CSS. In the future I hope to work with a company with a product I can stand by, a team I can work with, and a company that can take my skills from a junior level to a senior level. </p>
 <p>I’m a first generation Iranian American who recently decided to put aside my career in Sales & Network Marketing to pursue a future in full-stack Web Development. The world of coding is a world of constant learning and challenge that doesn’t prejudice where you come from, but only cares about where you’re going, and that’s what continues to fuel my passion to become a powerful web developer. </p>
 <p>In my previous world of Network Marketing, I was  required to grow myself into a leader quickly because I needed to lead a team of high performers to achieve their own successes & sales goals. I also realized that I quickly needed to become comfortable being uncomfortable if I ever wanted to see success, which meant I needed to be comfortable with public speaking in front of hundreds of people, comfortable cold marketing people to share the business opportunity/product, and comfortable getting used to hearing the most feared single word… “no”. Combine those experiences with my childhood where I moved around a lot due to my parents work and financial situation resulting in myself attending seven different schools. These situations blessed me with my avid learner personality, open mindedness and a craving for solving challenges, that I plan to combine with my networking marketing skills and web development skills in my next role. </p>
-<a href="https://github.com/armanisani">Github</a>
-<a href="https://www.linkedin.com/in/armansani?trk=nav_responsive_tab_profile">Linkedin</a>
+
     </div>
+<!-- ///////////////////////////////////////////////////// First Project /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
     <div style="display: none" id="p2">
+      <div style="text-align: center">
       <p>
-        <h2>Choose Your Own Adventure!</h2>
+        <h2 >Choose Your Own Adventure!</h2>
+        <div style="text-align: center;">
+        <img style="width: 1000px;"src="./images/adventure.png" alt="" />
+      </div>
 
 <p>The object of the game is to choose a path that you find best to take you onto the next stage. After you pick a path an event will pop up explaining the consequences of your decision. Not all paths will lead you forward some will kill your player, damage him greatly, or lead you in the wrong direction. You can find weapons and supplies that will help you along the way with paths.
 
 Each stage you continue onto will reward you with 5 points to your score, and if you hit certain milestones you will be rewarded more points. After your player 1 dies, player 2 will start from the begginning. Once both players die, the winner will be determined base off who has the most points.</p>
-
 <h4>Play this game here: <a href="http://armanisani.github.io/Survive_Game/">Play Game</a> <br>
   Trello: <a href="https://trello.com/b/v5tNGLoW/wdi-p1">User Stories</a></h4>
+</div>
 
 <h3>How to Play </h3>
 
@@ -102,47 +103,46 @@ After picking a path an event will pop up explaining the consequences of your de
 When you are done reading an event click outside the box for an easy exit out of it</p>
 
 <h3>Game Tips</h3>
+<ul>
+<li>Make sure to check the box first to get your tool that will help you get started.</li>
 
-<p>Make sure to check the box first to get your tool that will help you get started
+<li>Dont trust the soldiers, they will hurt you.</li>
 
-Dont trust the soldiers, they will hurt you
+<li>Becareful when you run.</li>
 
-Becareful when you run
-
-This game is really really hard </p>
+<li>This game is really really hard </li>
+</ul>
 
 <h3>Future Implementations</h3>
-
-<p>Create your own choose adventure game</p>
-
-<p>4 players</p>
-
-<p>Different Maps</p>
-
-<p>More detailed explainations</p>
-
+<ul>
+<li>Create your own choose adventure game</li>
+<li>4 players</li>
+<li>Different Maps</li>
+<li>More detailed explainations</li>
+</ul>
 <h3>Technologies/Frameworks</h3>
-
-<p>HTML</p>
-
-<p>CSS</p>
-
-<p>Javascript</p>
-
-<p>jQuery</p>
-
-<p>Bootstrap</p>
-
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Javascript</li>
+<li>jQuery</li>
+<li>Bootstrap</li>
+</ul>
 
       </p>
     </div>
+<!-- ///////////////////////////////////////////////////// Second Project /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
     <div style="display: none" id="p3">
-      <h2>cart e-commerce</h2>
+      <div style="text-align: center">
+      <h2>Cart | eCommerce</h2>
+      <img style="width: 1000px;x;"src="./images/Cart.png" alt="" />
 <p>Buy unique artwork from artists across the globe! This website is designed to give artists a tool to be able to upload their artwork to their fanbase to view, like, and bid on to have an opportunity to add it to their art collection in real life and on their profile! Users have the ability to follow artists/users they like and view their artposts on their feed.</p>
 
 Trello: <a href="https://trello.com/b/47MlJ82w/wdi-p2">Link</a> <br>
 Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
-
+<h2 style="color: red">*NOTE* Since it's uploaded to heroku uploaded images on the site will expire within a couple hours</h2>
+</div>
 <h3>Future Implementations</h3>
 <ul>
 <li>Bid/buyout</li>
@@ -165,16 +165,19 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
 </ul>
 
     </div>
+<!-- ///////////////////////////////////////////////////// Third Project /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
     <div style="display: none" id="p4">
+      <div style="text-align: center;">
       <h2>Skedj</h2>
 
-      <h3>Description</h3>
+      <img style="width: 1000px"src="./images/skedj.png" alt="" />
 
       <p>This website simplifies making itineraries by giving you realtime access to Yelp's api giving you a rundown of restaurant, bars, events, etc in your geolocated area. We give you an easy step by step process that lets you plug in what you want to our "sophisticated algorithm", and in return you receive the most ideal schedule combination of business based off of your needs & location.</p>
       <a href="https://skedj.herokuapp.com/">Site here</a> <br>
 
       <a href="https://trello.com/b/afv84TWz/wdi-p3">Trello</a>
-
+    </div>
       <h3>Technologies Used</h3>
       <ul>
         <li>NodeJS + Express</li>
@@ -186,6 +189,11 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
         <li>HTML</li>
         <li>CSS</li>
       </ul>
+      <h3>Team</h3>
+      <ul>
+        <li>Arman Sani</li>
+        <li>Jonah Hontos</li>
+        <li>Steven</li>
       <h3>Third-party APIs</h3>
       <ul>
       <li>Yelp</li>
@@ -241,10 +249,10 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
 <p>contains data about what review a product has</p>
 </ul>
     </div>
-    <div class="footer">
+    <div style="display: none" id="contactform">
       <div class="container">
 
-          <form action="mailto:armanisani@gmail.com?subject=&body=comment%0D%0A" ENCTYPE="text/plain" class="well form-horizontal" action=" " method="post" id="contact_form">
+          <form  action="mailto:armanisani@gmail.com" ENCTYPE="text/plain" class="well form-horizontal" method="post" id="contact_form">
       <fieldset>
 
       <!-- Form Name -->
@@ -384,7 +392,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
           <div class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
         <input name="Zipcode" placeholder="Zip Code" class="form-control"  type="text">
-          </div>
+      </div>
       </div>
       </div>
 
@@ -445,6 +453,11 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
           </div><!-- /.container -->
     </div>
   </div>
+  <div style="background: white" class="footer">
+    <div style="text-align: center; ">
+    <a href="https://github.com/armanisani"><img class="icon" src="./images/github.png" alt="" /></a>
+    <a href="https://www.linkedin.com/in/armansani?trk=nav_responsive_tab_profile"><img class="icon" src="./images/linkedin.png"></a>
+    </div>
   </div>
 
 
@@ -459,20 +472,25 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
       var project2 = $('#project2')
       var project3 = $('#project3')
       var project4 = $('#project4')
+      var contact = $('#contact')
 
+
+// the function for the button clicks to hide and unhide
       home.click(function(){
         $('#p1').show()
         $('#p2').hide()
         $('#p3').hide()
         $('#p4').hide()
         $('#p5').hide()
+        $('#contactform').hide()
       })
       project1.click(function(){
-      $('#p1').hide()
-      $('#p2').show()
-      $('#p3').hide()
-      $('#p4').hide()
-      $('#p5').hide()
+        $('#p1').hide()
+        $('#p2').show()
+        $('#p3').hide()
+        $('#p4').hide()
+        $('#p5').hide()
+        $('#contactform').hide()
       })
       project2.click(function(){
         $('#p1').hide()
@@ -480,6 +498,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
         $('#p3').show()
         $('#p4').hide()
         $('#p5').hide()
+        $('#contactform').hide()
       })
       project3.click(function(){
         $('#p1').hide()
@@ -487,6 +506,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
         $('#p3').hide()
         $('#p4').show()
         $('#p5').hide()
+        $('#contactform').hide()
       })
       project4.click(function(){
         $('#p1').hide()
@@ -494,6 +514,15 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
         $('#p3').hide()
         $('#p4').hide()
         $('#p5').show()
+        $('#contactform').hide()
+      })
+      contact.click(function(){
+        $('#p1').hide()
+        $('#p2').hide()
+        $('#p3').hide()
+        $('#p4').hide()
+        $('#p5').hide()
+        $('#contactform').show()
       })
 
       $('.dropdown-toggle').dropdown()
