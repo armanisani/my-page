@@ -32,20 +32,29 @@ if($_POST["submit"]) {
     <title>Arman Sani</title>
   </head>
   <link href="./index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+ <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
   <body>
+    <div id="introdiv">
+    <img id="intro"src="./images/intro.jpg" alt="" />
+    <h1 id="introword">Arman Sani | Full Stack Web Developer</h1>
+  </div>
     <div id="header">
 
       <video class="embed-responsive-item" controls="controls" autoplay loop muted id="video" src="./videos/background.mp4" >
 
 
       </video>
+      <div style="padding: auto">
 
-      <img id="profile" src="./images/me.jpg" alt="" />
-      <h1 style="color: white; position: absolute; top: 400px; text-align: center">Arman Sani - Full Stack Web Developer</h1>
+      <h1 class="words">"Every great dream begins with a dreamer. Always remember, you have within you the strength, the patience, and the passion to reach for the stars to change the world."</h1>
+    </div>
 
     </div>
     <div style="background: white">
@@ -61,7 +70,8 @@ if($_POST["submit"]) {
             <a id="project3" type="a" class="dropdown-item btn btn-primary navbar-btn">Project 3 | Skedj</a>
             <a id="project4" type="a" class="dropdown-item btn btn-primary navbar-btn">Project 4 | Cart mobile-app</a>
             </div>
-          <button id="contact" type="button" class="navbar-btn btn btn-default " name="button">Contact</button>
+            <button id="skill" type="button" class="navbar-btn btn btn-default " name="button">Skills</button>
+            <button id="contact" type="button" class="navbar-btn btn btn-default " name="button">Contact</button>
 
 
       </div>
@@ -69,20 +79,21 @@ if($_POST["submit"]) {
 
     <div class="container">
 <!-- ///////////////////////////////////////////////////// About me /////////////////////////////////////////////////////////////////////////////////////////////////// -->
-      <div id="p1">
-      <h1 style="text-align: center"> About me</h1>
-      <p>
-        I want to be a Full-Stack Developer with a focus on Ruby-on-Rails, Javascript, and HTML/CSS. In the future I hope to work with a company with a product I can stand by, a team I can work with, and a company that can take my skills from a junior level to a senior level. </p>
+      <div style="text-align: center"id="p1">
+        <img id="profile" src="./images/me.jpg" alt="" />
+        <h1 class="words1">Arman Sani | Full Stack Web Developer</h1>
+
 <p>I’m a first generation Iranian American who recently decided to put aside my career in Sales & Network Marketing to pursue a future in full-stack Web Development. The world of coding is a world of constant learning and challenge that doesn’t prejudice where you come from, but only cares about where you’re going, and that’s what continues to fuel my passion to become a powerful web developer. </p>
 <p>In my previous world of Network Marketing, I was  required to grow myself into a leader quickly because I needed to lead a team of high performers to achieve their own successes & sales goals. I also realized that I quickly needed to become comfortable being uncomfortable if I ever wanted to see success, which meant I needed to be comfortable with public speaking in front of hundreds of people, comfortable cold marketing people to share the business opportunity/product, and comfortable getting used to hearing the most feared single word… “no”. Combine those experiences with my childhood where I moved around a lot due to my parents work and financial situation resulting in myself attending seven different schools. These situations blessed me with my avid learner personality, open mindedness and a craving for solving challenges, that I plan to combine with my networking marketing skills and web development skills in my next role. </p>
-
+<p>
+  I'm a Full-Stack Web Developer with a focus on Ruby-on-Rails, Javascript, and Angular. In the future I hope to work with a company with a product I can stand by, a team I can work with, and a company that can take my skills from a junior level to a senior level. </p>
     </div>
 <!-- ///////////////////////////////////////////////////// First Project /////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
     <div style="display: none" id="p2">
       <div style="text-align: center">
       <p>
-        <h2 >Choose Your Own Adventure!</h2>
+        <h2 class="words1">Choose Your Own Adventure!</h2>
         <div style="text-align: center;">
         <img style="width: 1000px;"src="./images/adventure.png" alt="" />
       </div>
@@ -135,7 +146,7 @@ When you are done reading an event click outside the box for an easy exit out of
 
     <div style="display: none" id="p3">
       <div style="text-align: center">
-      <h2>Cart | eCommerce</h2>
+      <h2 class="words1">Cart | eCommerce</h2>
       <img style="width: 1000px;x;"src="./images/Cart.png" alt="" />
 <p>Buy unique artwork from artists across the globe! This website is designed to give artists a tool to be able to upload their artwork to their fanbase to view, like, and bid on to have an opportunity to add it to their art collection in real life and on their profile! Users have the ability to follow artists/users they like and view their artposts on their feed.</p>
 
@@ -169,7 +180,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
 
     <div style="display: none" id="p4">
       <div style="text-align: center;">
-      <h2>Skedj</h2>
+      <h2 class="words1">Skedj</h2>
 
       <img style="width: 1000px"src="./images/skedj.png" alt="" />
 
@@ -194,6 +205,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
         <li>Arman Sani</li>
         <li>Jonah Hontos</li>
         <li>Steven Magadan</li>
+      </ul>
       <h3>Third-party APIs</h3>
       <ul>
       <li>Yelp</li>
@@ -212,11 +224,11 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
 <!-- ///////////////////////////////////////////////////// Fourth Project /////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div style="display: none"id="p5">
       <div style="text-align: center">
-      <h2>Cart Mobile App</h2>
+      <h2 class="words1">Cart Mobile App</h2>
 <img style="width: 1000px;"src="./images/app.png" alt="" />
 
 <p>This mobile app helps connect independent business owners to customers around the world by working as a platform for business owners to be able to plug in their business for potential customers to see and buy.<p>
-  <h4 style="red">*NOTE* This app was built in 4 days need to finish up the last parts for a MVP </h4>
+  <h4 style="color: red">*NOTE* This app was built in 4 days need to finish up the last parts for a MVP </h4>
 <a href="https://stark-wave-90063.herokuapp.com/">Site here</a>
 </div>
 <h3>Technologies Used</h3>
@@ -229,9 +241,11 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
 <li>CSS</li>
 </ul>
 <h3>Team</h3>
+<ul>
 <li>Arman Sani</li>
 <li>Jennifer Wu</li>
 <li>Lewis Bracey</li>
+</ul>
 <h3>Future Implementations</h3>
 <ul>
 <li>Facebook auth</li>
@@ -461,6 +475,145 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
           </div><!-- /.container -->
     </div>
   </div>
+  <div style="display: none"id="skills">
+    <div class="row text-center">
+      <h1 class="words1">My Skills</h1>
+
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-2x">
+                             <i class="devicon devicon-css3-plain-wordmark colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-3x">
+                             <i class="devicon-html5-plain-wordmark colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-3x">
+                             <i class="devicon-rails-plain-wordmark colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-3x">
+                           <i class="devicon devicon-gulp-plain colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                 </div>
+                 <div class="row text-center">
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-4x">
+                             <i class="devicon-ruby-plain-wordmark colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-3x">
+                             <i class="devicon-javascript-plain colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-3x">
+                             <i class="devicon-jquery-plain-wordmark colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-3x">
+                             <i class="devicon devicon-sass-original colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                 </div>
+                 <div class="row text-center">
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-3x">
+                            <i class="devicon devicon-bootstrap-plain-wordmark colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-3x">
+                           <i class="devicon-postgresql-plain-wordmark colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-3x">
+                             <i class="devicon-mongodb-plain-wordmark colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-3x">
+                             <i class="devicon devicon-github-plain-wordmark fa-stack-2x"></i>
+                         </span>
+                     </div>
+                 </div>
+                 <div class="row text-center">
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-5x">
+                             <i class="devicon devicon-angularjs-plain-wordmark colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-5x">
+                           <i class="devicon-nodejs-plain-wordmark colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-5x">
+                            <i class="devicon-mysql-plain-wordmark colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-5x">
+                             <i class="devicon devicon-trello-plain-wordmark colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                 </div>
+                 <div class="row text-center">
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-3x">
+                             <i class="devicon-d3js-plain colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-3x">
+                           <i class="devicon-git-plain-wordmark colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-3x">
+                            <i class="devicon-github-plain-wordmark colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-3x">
+                             <i class="devicon-react-original-wordmark colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                 </div>
+                 <div class="row text-center">
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-3x">
+                             <i class="devicon-python-plain-wordmark colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-3x">
+                           <i class="devicon-heroku-original colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-3x">
+                            <i class="devicon-atom-original colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                     <div class="col-md-3">
+                         <span class="fa-stack fa-3x">
+                             <i class="devicon-photoshop-line colored fa-stack-2x"></i>
+                         </span>
+                     </div>
+                 </div>
+
+
+           </div>
+  </div>
   <div style="background: white" class="footer">
     <div style="text-align: center; ">
     <a href="https://github.com/armanisani"><img class="icon" src="./images/github.png" alt="" /></a>
@@ -469,208 +622,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
   </div>
 
 
-
-    <script type="text/javascript">
-      var profile = $('#profile')
-      var scope = $('#scope')
-      var header = $('#header')
-      var button = $('#butt')
-      var project1 = $('#project1')
-      var home = $('#home')
-      var project2 = $('#project2')
-      var project3 = $('#project3')
-      var project4 = $('#project4')
-      var contact = $('#contact')
-
-
-// the function for the button clicks to hide and unhide
-      home.click(function(){
-        $('#p1').show()
-        $('#p2').hide()
-        $('#p3').hide()
-        $('#p4').hide()
-        $('#p5').hide()
-        $('#contactform').hide()
-      })
-      project1.click(function(){
-        $('#p1').hide()
-        $('#p2').show()
-        $('#p3').hide()
-        $('#p4').hide()
-        $('#p5').hide()
-        $('#contactform').hide()
-      })
-      project2.click(function(){
-        $('#p1').hide()
-        $('#p2').hide()
-        $('#p3').show()
-        $('#p4').hide()
-        $('#p5').hide()
-        $('#contactform').hide()
-      })
-      project3.click(function(){
-        $('#p1').hide()
-        $('#p2').hide()
-        $('#p3').hide()
-        $('#p4').show()
-        $('#p5').hide()
-        $('#contactform').hide()
-      })
-      project4.click(function(){
-        $('#p1').hide()
-        $('#p2').hide()
-        $('#p3').hide()
-        $('#p4').hide()
-        $('#p5').show()
-        $('#contactform').hide()
-      })
-      contact.click(function(){
-        $('#p1').hide()
-        $('#p2').hide()
-        $('#p3').hide()
-        $('#p4').hide()
-        $('#p5').hide()
-        $('#contactform').show()
-      })
-
-
-      v = document.getElementsByTagName("video")[0]
-      console.log(v);
-        // run the video in the background and loops it
-        v.addEventListener('play', function() {
-          console.log(this)
-          v.currentTime = 16;
-        }, false);
-
-        // profile.animate({left: "60%"}, 2000).animate({left:"20%"}, 2000).animate({left: "40%"}, 2000, function(){
-        //   scope.animate({opacity: 1, left: "40%"}, 2000, function(){
-        //     header.css("background", "red")
-        //   })
-        // })
-        // $(document).ready(function() {
-        //     $('#contact_form').bootstrapValidator({
-        //         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
-        //         feedbackIcons: {
-        //             valid: 'glyphicon glyphicon-ok',
-        //             invalid: 'glyphicon glyphicon-remove',
-        //             validating: 'glyphicon glyphicon-refresh'
-        //         },
-        //         fields: {
-        //             first_name: {
-        //                 validators: {
-        //                         stringLength: {
-        //                         min: 2,
-        //                     },
-        //                         notEmpty: {
-        //                         message: 'Please supply your first name'
-        //                     }
-        //                 }
-        //             },
-        //              last_name: {
-        //                 validators: {
-        //                      stringLength: {
-        //                         min: 2,
-        //                     },
-        //                     notEmpty: {
-        //                         message: 'Please supply your last name'
-        //                     }
-        //                 }
-        //             },
-        //             email: {
-        //                 validators: {
-        //                     notEmpty: {
-        //                         message: 'Please supply your email address'
-        //                     },
-        //                     emailAddress: {
-        //                         message: 'Please supply a valid email address'
-        //                     }
-        //                 }
-        //             },
-        //             phone: {
-        //                 validators: {
-        //                     notEmpty: {
-        //                         message: 'Please supply your phone number'
-        //                     },
-        //                     phone: {
-        //                         country: 'US',
-        //                         message: 'Please supply a vaild phone number with area code'
-        //                     }
-        //                 }
-        //             },
-        //             address: {
-        //                 validators: {
-        //                      stringLength: {
-        //                         min: 8,
-        //                     },
-        //                     notEmpty: {
-        //                         message: 'Please supply your company name'
-        //                     }
-        //                 }
-        //             },
-        //             city: {
-        //                 validators: {
-        //                      stringLength: {
-        //                         min: 4,
-        //                     },
-        //                     notEmpty: {
-        //                         message: 'Please supply your city'
-        //                     }
-        //                 }
-        //             },
-        //             state: {
-        //                 validators: {
-        //                     notEmpty: {
-        //                         message: 'Please select your state'
-        //                     }
-        //                 }
-        //             },
-        //             zip: {
-        //                 validators: {
-        //                     notEmpty: {
-        //                         message: 'Please supply your zip code'
-        //                     },
-        //                     zipCode: {
-        //                         country: 'US',
-        //                         message: 'Please supply a vaild zip code'
-        //                     }
-        //                 }
-        //             },
-        //             comment: {
-        //                 validators: {
-        //                       stringLength: {
-        //                         min: 10,
-        //                         max: 200,
-        //                         message:'Please enter at least 10 characters and no more than 200'
-        //                     },
-        //                     notEmpty: {
-        //                         message: 'Please supply a description of your message to me'
-        //                     }
-        //                     }
-        //                 }
-        //             }
-        //         })
-        //         .on('success.form.bv', function(e) {
-        //             $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
-        //                 $('#contact_form').data('bootstrapValidator').resetForm();
-        //
-        //             // Prevent form submission
-        //             e.preventDefault();
-        //
-        //             // Get the form instance
-        //             var $form = $(e.target);
-        //
-        //             // Get the BootstrapValidator instance
-        //             var bv = $form.data('bootstrapValidator');
-        //
-        //             Use Ajax to submit form data
-        //             $.post($form.attr('action'), $form.serialize(), function(result) {
-        //                 console.log(result);
-        //             }, 'json');
-        //         });
-        // });
-
-
-    </script>
+  <script src="./index.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   </body>
