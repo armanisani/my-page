@@ -39,7 +39,7 @@ if($_POST["submit"]) {
   <body>
     <div id="header">
 
-      <video class="embed-responsive-item" autoplay loop muted id="video" src="./videos/background.mp4" >
+      <video class="embed-responsive-item" controls="controls" autoplay loop muted id="video" src="./videos/background.mp4" >
 
 
       </video>
@@ -193,7 +193,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
       <ul>
         <li>Arman Sani</li>
         <li>Jonah Hontos</li>
-        <li>Steven</li>
+        <li>Steven Magadan</li>
       <h3>Third-party APIs</h3>
       <ul>
       <li>Yelp</li>
@@ -209,12 +209,16 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
       <h4>Business</h4>
       <p>contains reference to a Yelp business id, plus parameters for quick display on frontend</P>
     </div>
+<!-- ///////////////////////////////////////////////////// Fourth Project /////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div style="display: none"id="p5">
+      <div style="text-align: center">
       <h2>Cart Mobile App</h2>
-<h3>Description</h3>
+<img style="width: 1000px;"src="./images/app.png" alt="" />
 
 <p>This mobile app helps connect independent business owners to customers around the world by working as a platform for business owners to be able to plug in their business for potential customers to see and buy.<p>
+  <h4 style="red">*NOTE* This app was built in 4 days need to finish up the last parts for a MVP </h4>
 <a href="https://stark-wave-90063.herokuapp.com/">Site here</a>
+</div>
 <h3>Technologies Used</h3>
 <ul>
 <li>NodeJS + Express + Angular</li>
@@ -224,7 +228,10 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
 <li>HTML</li>
 <li>CSS</li>
 </ul>
-
+<h3>Team</h3>
+<li>Arman Sani</li>
+<li>Jennifer Wu</li>
+<li>Lewis Bracey</li>
 <h3>Future Implementations</h3>
 <ul>
 <li>Facebook auth</li>
@@ -232,6 +239,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
 <li>Search tab</li>
 <li>Notifications Tab</li>
 <li>Photo upload</li>
+<li>Finishing the last parts of the app</li>
 </ul>
 <h3>Data Model</h3>
 <ul>
@@ -525,7 +533,14 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
         $('#contactform').show()
       })
 
-      $('.dropdown-toggle').dropdown()
+
+      v = document.getElementsByTagName("video")[0]
+      console.log(v);
+        // run the video in the background and loops it
+        v.addEventListener('play', function() {
+          console.log(this)
+          v.currentTime = 16;
+        }, false);
 
         // profile.animate({left: "60%"}, 2000).animate({left:"20%"}, 2000).animate({left: "40%"}, 2000, function(){
         //   scope.animate({opacity: 1, left: "40%"}, 2000, function(){
