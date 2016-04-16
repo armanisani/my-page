@@ -76,9 +76,7 @@ skill.click(function(){
   $('#skills').show()
 })
 intro.click(function(){
-  $('#introdiv').animate({
-    opacity: 0
-  }, 5000)
+  $('#introdiv').hide(4000)
 })
 
 
