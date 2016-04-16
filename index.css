@@ -61,6 +61,13 @@ body {
   font-size: 35px;
   background: #0098b3
 }
+.banners {
+  font-family: 'Lobster', cursive;
+  color: #7389bf;
+  text-align: center;
+  font-size: 35px;
+  background: black;
+}
 .little-words {
 }
 
@@ -83,7 +90,7 @@ body {
 #introword {
   z-index: 1000000;
   position: fixed;
-  top: 300px;
+  top: 330px;
   left: 30%;
   margin: 0 auto;
   color: rgb(168, 193, 255);

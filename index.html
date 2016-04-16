@@ -43,7 +43,7 @@ if($_POST["submit"]) {
   </div>
     <div id="header">
 
-      <video style="margin-top: 60px;"class="embed-responsive-item" controls="controls" autoplay loop muted id="video" src="./videos/background.mp4" >
+      <video style="margin-top: 40px;"class="embed-responsive-item" controls="controls" autoplay loop muted id="video" src="./videos/background.mp4" >
 
 
       </video>
@@ -57,24 +57,22 @@ if($_POST["submit"]) {
 
       <div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
           <div class="container-fluid">
-              <div id="home" class="words navbar-header"><a class="navbar-brand" href="#">Arman Sani</a>
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                  </button>
+              <div style="font-size: 40px"  class="words navbar-header"><a href="#p1"class="navbar-brand">Arman Sani</a>
               </div>
               <div class="collapse navbar-collapse navbar-menubuilder">            <ul class="nav navbar-nav navbar-right">
-              <li><button type="button" class="btn navbar-btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <li><a type="button" class="btn navbar-btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Projects
-                  </button>
+                </a>
                 <div style="text-align: center" class="dropdown-menu">
-                <a id="project1" type="button" class="dropdown-item btn btn-primary navbar-btn">Project 1 | Survive Game</a>
-                <a id="project2" type="a" class="dropdown-item btn btn-primary navbar-btn">Project 2 | Cart</a>
-                <a id="project3" type="a" class="dropdown-item btn btn-primary navbar-btn">Project 3 | Skedj</a>
-                <a id="project4" type="a" class="dropdown-item btn btn-primary navbar-btn">Project 4 | Cart mobile-app</a>
+                <a href="#p2" id="project1" type="button" class="dropdown-item btn btn-primary navbar-btn">Project 1 | Survive Game</a>
+                <a href="#p3" id="project2" type="a" class="dropdown-item btn btn-primary navbar-btn">Project 2 | Cart</a>
+                <a href="#p4"id="project3" type="a" class="dropdown-item btn btn-primary navbar-btn">Project 3 | Skedj</a>
+                <a href="#p5" id="project4" type="a" class="dropdown-item btn btn-primary navbar-btn">Project 4 | Cart mobile-app</a>
                 </div>
                 </li>
-                <li><button id="skill" type="button" class="navbar-btn btn btn-primary " name="button">Skills</button>
+                <li><a id="skill" type="button" href="#skills" class="navbar-btn btn btn-primary " name="button">Skills</a>
                 </li>
-                <li><button id="contact" type="button" class="navbar-btn btn btn-primary " name="button">Contact</button>
+                <li><a id="contact" type="button"  href="#contactform"class="navbar-btn btn btn-primary " name="button">Contact</a>
                 </li>
             </ul>
 
@@ -97,9 +95,10 @@ if($_POST["submit"]) {
     </div>
 <!-- ///////////////////////////////////////////////////// First Project /////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-    <div style="display: none" id="p2">
+    <div style="margin-top: 100px; margin-bottom: 50px"id="p2">
       <div style="text-align: center">
       <p>
+        <h2 class="banners">Projects</h2>
         <h2 class="words1">Choose Your Own Adventure!</h2>
         <div style="text-align: center;">
         <img style="width: 1000px;"src="./images/adventure.png" alt="" />
@@ -151,7 +150,7 @@ When you are done reading an event click outside the box for an easy exit out of
     </div>
 <!-- ///////////////////////////////////////////////////// Second Project /////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-    <div style="display: none" id="p3">
+    <div  id="p3">
       <div style="text-align: center">
       <h2 class="words1">Cart | eCommerce</h2>
       <img style="width: 1000px;x;"src="./images/Cart.png" alt="" />
@@ -185,7 +184,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
     </div>
 <!-- ///////////////////////////////////////////////////// Third Project /////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-    <div style="display: none" id="p4">
+    <div  id="p4">
       <div style="text-align: center;">
       <h2 class="words1">Skedj</h2>
 
@@ -229,7 +228,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
       <p>contains reference to a Yelp business id, plus parameters for quick display on frontend</P>
     </div>
 <!-- ///////////////////////////////////////////////////// Fourth Project /////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <div style="display: none"id="p5">
+    <div id="p5">
       <div style="text-align: center">
       <h2 class="words1">Cart Mobile App</h2>
 <img style="width: 1000px;"src="./images/app.png" alt="" />
@@ -278,7 +277,124 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
 <p>contains data about what review a product has</p>
 </ul>
     </div>
-    <div style="display: none" id="contactform">
+    <div style="margin-top: 50px;" id="skills">
+      <div class="row text-center">
+        <h1 class="words1">My Skills</h1>
+
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-2x">
+                               <i class="devicon devicon-css3-plain-wordmark colored fa-stack-2x"></i>
+                           </span>
+                       </div>
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-3x">
+                               <i class="devicon-html5-plain-wordmark colored fa-stack-2x"></i>
+                           </span>
+                       </div>
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-3x">
+                               <i class="devicon-rails-plain-wordmark colored fa-stack-2x"></i>
+                           </span>
+                       </div>
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-3x">
+                             <i class="devicon devicon-gulp-plain colored fa-stack-2x"></i>
+                           </span>
+                       </div>
+                   </div>
+                   <div class="row text-center">
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-4x">
+                               <i class="devicon-ruby-plain-wordmark colored fa-stack-2x"></i>
+                           </span>
+                       </div>
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-3x">
+                               <i class="devicon-javascript-plain colored fa-stack-2x"></i>
+                           </span>
+                       </div>
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-3x">
+                               <i class="devicon-jquery-plain-wordmark colored fa-stack-2x"></i>
+                           </span>
+                       </div>
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-3x">
+                               <i class="devicon devicon-sass-original colored fa-stack-2x"></i>
+                           </span>
+                       </div>
+                   </div>
+                   <div class="row text-center">
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-3x">
+                              <i class="devicon devicon-bootstrap-plain-wordmark colored fa-stack-2x"></i>
+                           </span>
+                       </div>
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-3x">
+                             <i class="devicon-postgresql-plain-wordmark colored fa-stack-2x"></i>
+                           </span>
+                       </div>
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-3x">
+                               <i class="devicon-mongodb-plain-wordmark colored fa-stack-2x"></i>
+                           </span>
+                       </div>
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-3x">
+                               <i class="devicon devicon-github-plain-wordmark fa-stack-2x"></i>
+                           </span>
+                       </div>
+                   </div>
+                   <div class="row text-center">
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-5x">
+                               <i class="devicon devicon-angularjs-plain-wordmark colored fa-stack-2x"></i>
+                           </span>
+                       </div>
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-5x">
+                             <i class="devicon-nodejs-plain-wordmark colored fa-stack-2x"></i>
+                           </span>
+                       </div>
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-5x">
+                              <i class="devicon-mysql-plain-wordmark colored fa-stack-2x"></i>
+                           </span>
+                       </div>
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-5x">
+                               <i class="devicon devicon-trello-plain-wordmark colored fa-stack-2x"></i>
+                           </span>
+                       </div>
+                   </div>
+                   <div class="row text-center">
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-3x">
+                               <i class="devicon-d3js-plain colored fa-stack-2x"></i>
+                           </span>
+                       </div>
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-3x">
+                             <i class="devicon-git-plain-wordmark colored fa-stack-2x"></i>
+                           </span>
+                       </div>
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-3x">
+                              <i class="devicon-python-plain-wordmark  colored fa-stack-2x"></i>
+                           </span>
+                       </div>
+                       <div class="col-md-3">
+                           <span class="fa-stack fa-3x">
+                               <i class="devicon-react-original-wordmark colored fa-stack-2x"></i>
+                           </span>
+                       </div>
+                   </div>
+
+
+
+             </div>
+    <div  style="margin-top: 100px;"id="contactform">
       <div class="container">
 
           <form  action="mailto:armanisani@gmail.com" ENCTYPE="text/plain" class="well form-horizontal" method="post" id="contact_form">
@@ -482,144 +598,7 @@ Site here: <a href="https://shrouded-thicket-68839.herokuapp.com/">Link</a> <br>
           </div><!-- /.container -->
     </div>
   </div>
-  <div style="display: none"id="skills">
-    <div class="row text-center">
-      <h1 class="words1">My Skills</h1>
 
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-2x">
-                             <i class="devicon devicon-css3-plain-wordmark colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-3x">
-                             <i class="devicon-html5-plain-wordmark colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-3x">
-                             <i class="devicon-rails-plain-wordmark colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-3x">
-                           <i class="devicon devicon-gulp-plain colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                 </div>
-                 <div class="row text-center">
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-4x">
-                             <i class="devicon-ruby-plain-wordmark colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-3x">
-                             <i class="devicon-javascript-plain colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-3x">
-                             <i class="devicon-jquery-plain-wordmark colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-3x">
-                             <i class="devicon devicon-sass-original colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                 </div>
-                 <div class="row text-center">
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-3x">
-                            <i class="devicon devicon-bootstrap-plain-wordmark colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-3x">
-                           <i class="devicon-postgresql-plain-wordmark colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-3x">
-                             <i class="devicon-mongodb-plain-wordmark colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-3x">
-                             <i class="devicon devicon-github-plain-wordmark fa-stack-2x"></i>
-                         </span>
-                     </div>
-                 </div>
-                 <div class="row text-center">
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-5x">
-                             <i class="devicon devicon-angularjs-plain-wordmark colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-5x">
-                           <i class="devicon-nodejs-plain-wordmark colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-5x">
-                            <i class="devicon-mysql-plain-wordmark colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-5x">
-                             <i class="devicon devicon-trello-plain-wordmark colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                 </div>
-                 <div class="row text-center">
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-3x">
-                             <i class="devicon-d3js-plain colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-3x">
-                           <i class="devicon-git-plain-wordmark colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-3x">
-                            <i class="devicon-github-plain-wordmark colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-3x">
-                             <i class="devicon-react-original-wordmark colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                 </div>
-                 <div class="row text-center">
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-3x">
-                             <i class="devicon-python-plain-wordmark colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-3x">
-                           <i class="devicon-heroku-original colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-3x">
-                            <i class="devicon-atom-original colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                     <div class="col-md-3">
-                         <span class="fa-stack fa-3x">
-                             <i class="devicon-photoshop-line colored fa-stack-2x"></i>
-                         </span>
-                     </div>
-                 </div>
-
-
-           </div>
   </div>
   <div class="footer">
     <div style="text-align: center; ">
