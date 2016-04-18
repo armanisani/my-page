@@ -50,7 +50,8 @@ body {
 p,
 ul,
 li{
-  color: #a8c1ff
+  color: #a8c1ff;
+  font-family: 'Righteous', cursive;
 }
 
 .words {
