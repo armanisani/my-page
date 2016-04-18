@@ -75,9 +75,10 @@ skill.click(function(){
   // $('#contactform').hide()
   // $('#skills').show()
 })
-intro.click(function(){
+introfun = function(){
   $('#introdiv').hide(4000)
-})
+}
+window.setTimeout(introfun, 3000)
 
 
 v = document.getElementsByTagName("video")[0]

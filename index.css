@@ -44,10 +44,15 @@
 .container {
   background: white
 }
-
 body {
-  background: white
+  background: black
 }
+p,
+ul,
+li{
+  color: #a8c1ff
+}
+
 .words {
   font-family: 'Lobster', cursive;
   color: rgb(168, 193, 255);
@@ -59,18 +64,18 @@ body {
   color: #a8c1ff;
   text-align: center;
   font-size: 35px;
-  background: #0098b3
+  background: #0098b3;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
-.banners {
+
+h3 {
   font-family: 'Lobster', cursive;
-  color: #7389bf;
+  color: #a8c1ff;
   text-align: center;
   font-size: 35px;
   background: black;
 }
-.little-words {
-}
-
 #skills {
   /*height: 500px;*/
   background: white
