@@ -1,7 +1,7 @@
 #header {
-  width:100%;
-  height: 600px;
-    overflow: auto;
+  width:auto;
+  height: 650px;
+    overflow: inherit;
     text-align: center;
     padding: 200px;
 }
@@ -20,6 +20,9 @@
 }
 #success_message{
   display: none;
+}
+.col-md-3 {
+  padding: 10px;
 }
 .icon {
   width: 50px;
@@ -45,7 +48,8 @@
   background: white
 }
 body {
-  background: black
+  background: black;
+  width: 100%
 }
 p,
 ul,
@@ -66,6 +70,7 @@ li{
   text-align: center;
   font-size: 35px;
   background: #0098b3;
+  padding: 10px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -139,4 +144,12 @@ h3 {
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #000000;
+}
+.banners {
+  font-family: 'Lobster', cursive;
+  color: #7389bf;
+  text-align: center;
+  font-size: 35px;
+  padding: 10px;
+  background: black;
 }
