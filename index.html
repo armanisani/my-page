@@ -1,625 +1,612 @@
- <!DOCTYPE html>
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Arman Sani</title>
-  </head>
-  <link href="./index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
-  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
- <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
- <body>
-    <div id="introdiv">
-    <img id="intro"src="./images/intro.jpg" alt="" />
-    <h1 id="introword">Arman Sani | Full Stack Web Developer</h1>
-  </div>
-    <div id="header">
 
-      <video style="margin-top: 40px;"class="embed-responsive-item" controls="controls" autoplay loop muted id="video" src="./videos/background.mp4" >
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
 
-      </video>
-      <div style="padding: auto">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
-      <h1 class="words">"Every great dream begins with a dreamer. Always remember, you have within you the strength, the patience, and the passion to reach for the stars to change the world."</h1>
-    </div>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-    </div>
-    <div style="background: black; width: 100%">
+</head>
 
-      <div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
-          <div class="container-fluid">
-              <div style="font-size: 40px"  class="words navbar-header"><a href="#p1"class="navbar-brand">Arman Sani</a>
-              </div>
-              <div class="collapse navbar-collapse navbar-menubuilder">            <ul class="nav navbar-nav navbar-right">
-              <li><a type="button" class="btn navbar-btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Projects
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                     <span class="light">Arman</span> Sani
                 </a>
-                <div style="text-align: center width: 200" class="dropdown-menu">
-                <a href="#p2" type="button" class="dropdown-item">Project 1 | Survive Game</a><br>
-                <a href="#p3" id="project2" type="a" class="dropdown-item">Project 2 | Cart</a><br>
-                <a href="#p4"id="project3" type="a" class="dropdown-item">Project 3 | Skedj</a><br>
-                <a href="#p5" id="project4" type="a" class="dropdown-item">Project 4 | Cart Mobile</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#profile">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading"></h1>
+                        <p class="intro-text">Arman Sani<br>Full Stack Web Developer</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
                 </div>
-                </li>
-                <li><a id="skill" type="button" href="#skills" class="navbar-btn btn btn-primary " name="button">Skills</a>
-                </li>
-                <li><a id="contact" type="button"  href="#contactform"class="navbar-btn btn btn-primary " name="button">Contact</a>
-                </li>
-            </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div>
+                <h2>About me</h2>
+                <img id="profile" src="./img/me.png" alt="" />
+                <h3>Arman Sani | Full Stack Web Developer</h3>
+
+                <p>I’m a first generation Iranian American who recently decided to put aside my career in Sales & Network Marketing to pursue a future in full-stack Web Development. The world of coding is a world of constant learning and challenge that doesn’t prejudice where you come from, but only cares about where you’re going, and that’s what continues to fuel my passion to become a powerful web developer. </p>
+                <p>In my previous world of Network Marketing, I was  required to grow myself into a leader quickly because I needed to lead a team of high performers to achieve their own successes & sales goals. I also realized that I quickly needed to become comfortable being uncomfortable if I ever wanted to see success, which meant I needed to be comfortable with public speaking in front of hundreds of people, comfortable cold marketing people to share the business opportunity/product, and comfortable getting used to hearing the most feared single word… “no”. Combine those experiences with my childhood where I moved around a lot due to my parents work and financial situation resulting in myself attending seven different schools. These situations blessed me with my avid learner personality, open mindedness, social skills, and a craving for solving challenges, that I plan to combine with my networking marketing skills and web development skills in my next role. </p>
+                <p>  I'm a Full-Stack Web Developer with a focus on Ruby-on-Rails, MEAN stack, and Javascript. I enjoy both the front-end & back-end, but if I had to choose between one I would choose backend. In the future I hope to work with a company with a product I can stand by, a team I can work with, and a company that can take my skills from a junior level to a senior level. </p>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio-Section -->
+
+    <section style="margin-top: 120px;"id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/Cart.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/adventure.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/app.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/skedj.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <!-- <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </section>
 
 
+    <!-- Map Section -->
+    <div id="skills" style="margin-top: 150px;"class="row text-center">
+      <h2>My Skills</h2>
+
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-2x">
+                           <i class="devicon devicon-css3-plain-wordmark colored fa-stack-2x"></i>
+                       </span>
+                   </div>
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-3x">
+                           <i class="devicon-html5-plain-wordmark colored fa-stack-2x"></i>
+                       </span>
+                   </div>
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-3x">
+                           <i class="devicon-rails-plain-wordmark colored fa-stack-2x"></i>
+                       </span>
+                   </div>
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-3x">
+                         <i class="devicon devicon-gulp-plain colored fa-stack-2x"></i>
+                       </span>
+                   </div>
+               </div>
+               <div class="row text-center">
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-4x">
+                           <i class="devicon-ruby-plain-wordmark colored fa-stack-2x"></i>
+                       </span>
+                   </div>
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-3x">
+                           <i class="devicon-javascript-plain colored fa-stack-2x"></i>
+                       </span>
+                   </div>
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-3x">
+                           <i class="devicon-jquery-plain-wordmark colored fa-stack-2x"></i>
+                       </span>
+                   </div>
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-3x">
+                           <i class="devicon devicon-sass-original colored fa-stack-2x"></i>
+                       </span>
+                   </div>
+               </div>
+               <div class="row text-center">
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-3x">
+                          <i class="devicon devicon-bootstrap-plain-wordmark colored fa-stack-2x"></i>
+                       </span>
+                   </div>
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-3x">
+                         <i class="devicon-postgresql-plain-wordmark colored fa-stack-2x"></i>
+                       </span>
+                   </div>
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-3x">
+                           <i class="devicon-mongodb-plain-wordmark colored fa-stack-2x"></i>
+                       </span>
+                   </div>
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-3x">
+                           <i class="devicon devicon-github-plain-wordmark fa-stack-2x"></i>
+                       </span>
+                   </div>
+               </div>
+               <div class="row text-center">
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-5x">
+                           <i class="devicon devicon-angularjs-plain-wordmark colored fa-stack-2x"></i>
+                       </span>
+                   </div>
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-5x">
+                         <i class="devicon-nodejs-plain-wordmark colored fa-stack-2x"></i>
+                       </span>
+                   </div>
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-5x">
+                          <i class="devicon-mysql-plain-wordmark colored fa-stack-2x"></i>
+                       </span>
+                   </div>
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-5x">
+                           <i class="devicon devicon-trello-plain-wordmark colored fa-stack-2x"></i>
+                       </span>
+                   </div>
+               </div>
+               <div class="row text-center">
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-3x">
+                           <i class="devicon-d3js-plain colored fa-stack-2x"></i>
+                       </span>
+                   </div>
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-3x">
+                         <i class="devicon-git-plain-wordmark colored fa-stack-2x"></i>
+                       </span>
+                   </div>
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-3x">
+                          <i class="devicon-python-plain-wordmark  colored fa-stack-2x"></i>
+                       </span>
+                   </div>
+                   <div class="col-md-3">
+                       <span class="fa-stack fa-3x">
+                           <i class="devicon-react-original-wordmark colored fa-stack-2x"></i>
+                       </span>
+                   </div>
+               </div>
+
+
+
+         </div>
+
+
+    <!-- Contact Section -->
+    <section style="margin-top: 150px" id="contact">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2>Contact Me</h2>
+                  <hr class="star-primary">
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                  <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                  <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                  <form name="sentMessage" id="contactForm" novalidate>
+                      <div class="row control-group">
+                          <div class="form-group col-xs-12 floating-label-form-group controls">
+                              <label>Name</label>
+                              <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                              <p class="help-block text-danger"></p>
+                          </div>
+                      </div>
+                      <div class="row control-group">
+                          <div class="form-group col-xs-12 floating-label-form-group controls">
+                              <label>Email Address</label>
+                              <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                              <p class="help-block text-danger"></p>
+                          </div>
+                      </div>
+                      <div class="row control-group">
+                          <div class="form-group col-xs-12 floating-label-form-group controls">
+                              <label>Phone Number</label>
+                              <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                              <p class="help-block text-danger"></p>
+                          </div>
+                      </div>
+                      <div class="row control-group">
+                          <div class="form-group col-xs-12 floating-label-form-group controls">
+                              <label>Message</label>
+                              <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                              <p class="help-block text-danger"></p>
+                          </div>
+                      </div>
+                      <br>
+                      <div id="success"></div>
+                      <div class="row">
+                          <div class="form-group col-xs-12">
+                              <button type="submit" class="btn btn-success btn-lg">Send</button>
+                          </div>
+                      </div>
+                  </form>
               </div>
           </div>
       </div>
-
-
-    <div style="background-color: white;" class="container">
-<!-- ///////////////////////////////////////////////////// About me /////////////////////////////////////////////////////////////////////////////////////////////////// -->
-      <div style="background-color: rgb(28, 58, 94); margin-top: 25px;text-align: center"id="p1">
-        <img id="profile" src="./images/me.png" alt="" />
-        <h1 class="words1">Arman Sani | Full Stack Web Developer</h1>
-
-<p>I’m a first generation Iranian American who recently decided to put aside my career in Sales & Network Marketing to pursue a future in full-stack Web Development. The world of coding is a world of constant learning and challenge that doesn’t prejudice where you come from, but only cares about where you’re going, and that’s what continues to fuel my passion to become a powerful web developer. </p>
-<p>In my previous world of Network Marketing, I was  required to grow myself into a leader quickly because I needed to lead a team of high performers to achieve their own successes & sales goals. I also realized that I quickly needed to become comfortable being uncomfortable if I ever wanted to see success, which meant I needed to be comfortable with public speaking in front of hundreds of people, comfortable cold marketing people to share the business opportunity/product, and comfortable getting used to hearing the most feared single word… “no”. Combine those experiences with my childhood where I moved around a lot due to my parents work and financial situation resulting in myself attending seven different schools. These situations blessed me with my avid learner personality, open mindedness, social skills, and a craving for solving challenges, that I plan to combine with my networking marketing skills and web development skills in my next role. </p>
-<p>  I'm a Full-Stack Web Developer with a focus on Ruby-on-Rails, MEAN stack, and Javascript. I enjoy both the front-end & back-end, but if I had to choose between one I would choose backend. In the future I hope to work with a company with a product I can stand by, a team I can work with, and a company that can take my skills from a junior level to a senior level. </p>
-    </div>
-<!-- ///////////////////////////////////////////////////// First Project /////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-    <div style="background-color: rgb(28, 58, 94); margin-top: 50px; margin-bottom: 50px"id="p2">
-      <div style="text-align: center">
-      <p>
-        <div class="row text-center">
-        <h1   class="banners">Projects</h1>
-      </div>
-        <h2 class="words1">Choose Your Own Adventure!</h2>
-        <div style="text-align: center;">
-        <img style="width: 800px;"src="./images/adventure.png" alt="" />
-      </div>
-
-<p>The object of the game is to choose a path that you find best to take you onto the next stage. After you pick a path an event will pop up explaining the consequences of your decision. Not all paths will lead you forward some will kill your player, damage him greatly, or lead you in the wrong direction. You can find weapons and supplies that will help you along the way with paths.
-
-Each stage you continue onto will reward you with 5 points to your score, and if you hit certain milestones you will be rewarded more points. After your player 1 dies, player 2 will start from the begginning. Once both players die, the winner will be determined base off who has the most points.</p>
- <a href="http://armanisani.github.io/Survive_Game/">Play Game</a> <br>
- <a href="https://trello.com/b/v5tNGLoW/wdi-p1">User Stories</a></p>
-</div>
-
-<h3 style="color: #a8c1ff">How to Play </h3>
-
-<p>Pick a path by clicking the picture of the path you find best
-
-After picking a path an event will pop up explaining the consequences of your decision
-
-When you are done reading an event click outside the box for an easy exit out of it</p>
-
-<h3 style="color: #a8c1ff">Game Tips</h3>
-<ul>
-<li>Make sure to check the box first to get your tool that will help you get started.</li>
-
-<li>Dont trust the soldiers, they will hurt you.</li>
-
-<li>Becareful when you run.</li>
-
-<li>This game is really really hard </li>
-</ul>
-
-<h3 style="color: #a8c1ff">Future Implementations</h3>
-<ul>
-<li>Create your own choose adventure game</li>
-<li>4 players</li>
-<li>Different Maps</li>
-<li>More detailed explainations</li>
-</ul>
-<h3 style="color: #a8c1ff">Technologies/Frameworks</h3>
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>Javascript</li>
-<li>jQuery</li>
-<li>Bootstrap</li>
-</ul>
-
-      </p>
-    </div>
-<!-- ///////////////////////////////////////////////////// Second Project /////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-    <div style='background-color: rgb(28, 58, 94)' id="p3">
-      <div style="text-align: center">
-      <h2 class="words1">Cart | eCommerce</h2>
-      <img style="width: 800px;x;"src="./images/Cart.png" alt="" />
-<p>Buy unique artwork from artists across the globe! This website is designed to give artists a tool to be able to upload their artwork to their fanbase to view, like, and bid on to have an opportunity to add it to their art collection in real life and on their profile! Users have the ability to follow artists/users they like and view their artposts on their feed.</p>
-
- <a href="https://trello.com/b/47MlJ82w/wdi-p2">Trello</a> <br>
-<a href="https://shrouded-thicket-68839.herokuapp.com/">Site</a> <br>
-<h2 style="color: red">*NOTE* Since it's uploaded to heroku uploaded images on the site will expire within a couple hours</h2>
-</div>
-<h3 style="color: #a8c1ff">Future Implementations</h3>
-<ul>
-<li>Bid/buyout</li>
-<li>Shopping cart</li>
-<li>Popup images/signup&signin</li>
-<li>More polished</li>
-<li>User messaging</li>
-<li>More responsive navbar</li>
-<li>Awards/trophies</li>
-<li>More detailed art posts</li>
-</ul>
-<h3 style="color: #a8c1ff">Technologies/Frameworks</h3>
-<ul>
-<li>HTML5/CSS3</li>
-<li>Javascript</li>
-<li>Ruby on Rails</li>
-<li>Jquery</li>
-<li>Bootstrap</li>
-</ul>
-<h3 style="color: #a8c1ff">Data Models</h3>
-<ul>
-  <li>Likes</li>
-  <p>Contains data on what products a user likes</p>
-  <li>Relations</li>
-  <p>Contains data on which user a user is following or which user is following him</p>
-  <li>Artwork</li>
-  <p>Contains data on the artwork that a user posts  </p>
-  <li>User</li>
-  <p>Contains data on the users within the site  </p>
-
-</ul>
-    </div>
-<!-- ///////////////////////////////////////////////////// Third Project /////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-    <div style='background-color: rgb(28, 58, 94)' id="p4">
-      <div style="text-align: center;">
-      <h2 class="words1">Skedj</h2>
-
-      <img style="width: 800px"src="./images/skedj.png" alt="" />
-
-      <p>This website simplifies making itineraries by giving you realtime access to Yelp's api giving you a rundown of restaurant, bars, events, etc in your geolocated area. We give you an easy step by step process that lets you plug in what you want to our "sophisticated algorithm", and in return you receive the most ideal schedule combination of business based off of your needs & location.</p>
-      <a href="https://skedj.herokuapp.com/">Site here</a> <br>
-
-      <a href="https://trello.com/b/afv84TWz/wdi-p3">Trello</a>
-    </div>
-      <h3 style="color: #a8c1ff">Technologies Used</h3>
-      <ul>
-        <li>NodeJS + Express</li>
-        <li>MongoDB + Mongoose</li>
-        <li>Javascript + jQuery</li>
-        <li>AJAX</li>
-        <li>Passport</li>
-        <li>Materialize</li>
-        <li>HTML</li>
-        <li>CSS</li>
-      </ul>
-      <h3 style="color: #a8c1ff">Team</h3>
-      <ul>
-        <li>Arman Sani</li>
-        <li>Jonah Hontos</li>
-        <li>Steven Magadan</li>
-      </ul>
-      <h3 style="color: #a8c1ff">Responsibilities</h3>
-      <ul>
-        <li>Front-end (AJAX, Materialize, HTML/CSS, jquery, Javascript)</li>
-        <li>Back-end (Node.js, Express.js, MongoDB, Mongoose)</li>
-        <li>Wireframing</li>
-        <li>Design</li>
-        <li>Testing</li>
-        <li>Connected and intergrated the Google Maps Api</li>
-        <li>Helped intergrate Yelp Api</li>
-      </ul>
-      <h3 style="color: #a8c1ff">Third-party APIs</h3>
-      <ul>
-      <li>Yelp</li>
-      <li>Google Maps</li>
-      <li>OAuth Providers</li>
-      <li>Facebook</li>
-    </ul>
-      <h3 style="color: #a8c1ff">Data Model</h3>
-      <ul>
-      <li>User</li>
-      <p>contains user data (email, password, saved schedules[links as reference])</p>
-      <li>Schedule</li>
-      <p> contains times and an array of businesses (embeded)</p>
-      <li>Business</li>
-      <p>contains reference to a Yelp business id, plus parameters for quick display on frontend</P>
-      </ul>
-    </div>
-<!-- ///////////////////////////////////////////////////// Fourth Project /////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <div style='background-color: rgb(28, 58, 94)'id="p5">
-      <div style="text-align: center">
-      <h2 class="words1">Cart Mobile App</h2>
-<img style="width: 800px;"src="./images/app.png" alt="" />
-
-<p>This mobile app helps connect independent business owners to customers around the world by working as a platform for business owners to be able to plug in their business for potential customers to see and buy.<p>
-  <h4 style="color: red">*NOTE* This app was built in 4 days need to finish up the last parts for a MVP </h4>
-<a href="https://stark-wave-90063.herokuapp.com/">Site here</a>
-</div>
-<h3 style="color: #a8c1ff">Technologies Used</h3>
-<ul>
-<li>NodeJS + Express + Angular</li>
-<li>MongoDB + Mongoose</li>
-<li>Javascript + jQuery</li>
-<li>Cordova + Ionic</li>
-<li>HTML</li>
-<li>CSS</li>
-</ul>
-<h3 style="color: #a8c1ff">Team</h3>
-<ul>
-<li>Arman Sani</li>
-<li>Jennifer Wu</li>
-<li>Lewis Bracey</li>
-</ul>
-<h3 style="color: #a8c1ff">Responsibilities</h3>
-<ul>
-  <li>Project Manager</li>
-  <li>Front-end (Angular, Ionic, HTML, Javascript )</li>
-  <ul>
-    <li>Created Newsfeed, Search, and Profile Section</li>
-  </ul>
-  <li>Back-end (Node.js, Express.js)</li>
-  <li>Design</li>
-  <li>Wireframing</li>
-  <li>Testing</li>
-</ul>
-<h3 style="color: #a8c1ff">Future Implementations</h3>
-<ul>
-<li>Facebook auth</li>
-<li>Stripe</li>
-<li>Search tab</li>
-<li>Notifications Tab</li>
-<li>Photo upload</li>
-<li>Finishing the last parts of the app</li>
-</ul>
-<h3 style="color: #a8c1ff">Data Model</h3>
-<ul>
-<li>Users</li>
-<p>contains user data (email, name, password, products, followers/following )</p>
-<li>Likes</li>
-<p>contains like data</p>
-<li>Products</li>
-<p>contains data about the products a user post-user</p>
-<li>Relations</li>
-<p>contains data about who the user follows/following</p>
-<li>Category</li>
-<p>contains data about which category a product is help within</p>
-<li>Review</li>
-<p>contains data about what review a product has</p>
-</ul>
-    </div>
-    <div id="skills" class="row text-center">
-      <h1 class="banners">My Skills</h1>
-    </div>
-    <div style="background-color: black;, 0 margin-top: 50px;">
-      <div style="margin-top: 10px;"class="row text-center">
-
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-2x">
-                               <i class="devicon devicon-css3-plain-wordmark colored fa-stack-2x"></i>
-                           </span>
-                       </div>
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-3x">
-                               <i class="devicon-html5-plain-wordmark colored fa-stack-2x"></i>
-                           </span>
-                       </div>
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-3x">
-                               <i class="devicon-rails-plain-wordmark colored fa-stack-2x"></i>
-                           </span>
-                       </div>
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-3x">
-                             <i class="devicon devicon-gulp-plain colored fa-stack-2x"></i>
-                           </span>
-                       </div>
-                   </div>
-                   <div class="row text-center">
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-4x">
-                               <i class="devicon-ruby-plain-wordmark colored fa-stack-2x"></i>
-                           </span>
-                       </div>
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-3x">
-                               <i class="devicon-javascript-plain colored fa-stack-2x"></i>
-                           </span>
-                       </div>
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-3x">
-                               <i class="devicon-jquery-plain-wordmark colored fa-stack-2x"></i>
-                           </span>
-                       </div>
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-3x">
-                               <i class="devicon devicon-sass-original colored fa-stack-2x"></i>
-                           </span>
-                       </div>
-                   </div>
-                   <div class="row text-center">
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-3x">
-                              <i class="devicon devicon-bootstrap-plain-wordmark colored fa-stack-2x"></i>
-                           </span>
-                       </div>
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-3x">
-                             <i class="devicon-postgresql-plain-wordmark colored fa-stack-2x"></i>
-                           </span>
-                       </div>
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-3x">
-                               <i class="devicon-mongodb-plain-wordmark colored fa-stack-2x"></i>
-                           </span>
-                       </div>
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-3x">
-                               <i class="devicon devicon-github-plain-wordmark fa-stack-2x"></i>
-                           </span>
-                       </div>
-                   </div>
-                   <div class="row text-center">
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-5x">
-                               <i class="devicon devicon-angularjs-plain-wordmark colored fa-stack-2x"></i>
-                           </span>
-                       </div>
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-5x">
-                             <i class="devicon-nodejs-plain-wordmark colored fa-stack-2x"></i>
-                           </span>
-                       </div>
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-5x">
-                              <i class="devicon-mysql-plain-wordmark colored fa-stack-2x"></i>
-                           </span>
-                       </div>
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-5x">
-                               <i class="devicon devicon-trello-plain-wordmark colored fa-stack-2x"></i>
-                           </span>
-                       </div>
-                   </div>
-                   <div class="row text-center">
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-3x">
-                               <i class="devicon-d3js-plain colored fa-stack-2x"></i>
-                           </span>
-                       </div>
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-3x">
-                             <i class="devicon-git-plain-wordmark colored fa-stack-2x"></i>
-                           </span>
-                       </div>
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-3x">
-                              <i class="devicon-python-plain-wordmark  colored fa-stack-2x"></i>
-                           </span>
-                       </div>
-                       <div class="col-md-3">
-                           <span class="fa-stack fa-3x">
-                               <i class="devicon-react-original-wordmark colored fa-stack-2x"></i>
-                           </span>
-                       </div>
-                   </div>
-
-
-
-             </div>
-    <div  style="margin-top: 100px;"id="contactform">
-          <form style="background-color: rgb(28, 58, 94)" action="mailto:armanisani@gmail.com" ENCTYPE="text/plain" class="well form-horizontal" method="post" id="contact_form">
-      <fieldset>
-
-      <!-- Form Name -->
-      <legend style="color: #a8c1ff ">Contact Me Today!</legend>
-
-      <!-- Text input-->
-
-      <div class="form-group">
-        <label style="color: #a8c1ff " class="col-md-4 control-label">Full Name</label>
-        <div class="col-md-4 inputGroupContainer">
-        <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-        <input  name="Full Name" placeholder="Full Name" class="form-control"  type="text">
+  </section>
+    <!-- Footer -->
+    <footer style="background: rgb(94, 94, 94)">
+        <div class="container text-center">
+          <div style="text-align: center; ">
+            <a href="https://github.com/armanisani"><img class="icon" src="./img/github.png" alt="" /></a>
+            <a href="https://www.linkedin.com/in/armansani?trk=nav_responsive_tab_profile"><img class="icon" src="./img/linkedin.png"></a>
           </div>
         </div>
-      </div>
-
-
-      <!-- Text input-->
-             <div class="form-group">
-        <label style="color: #a8c1ff " class="col-md-4 control-label">E-Mail</label>
-          <div class="col-md-4 inputGroupContainer">
-          <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-        <input name="Email" placeholder="E-Mail Address" class="form-control"  type="text">
-          </div>
+    </footer>
+    <!-- Portfolio modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2 class="insidemodal">Cart | eCommerce</h2>
+                            <hr class="star-primary">
+                            <img src="img/Cart.png" class="img-responsive img-centered" alt="">
+                            <p class="insidemodal">The most difficult hurdle that artists face nowadays is getting their artwork promoted to the right buyers. Cart fixes that problem by giving artists across the globe a tool to be able to upload their artwork, share it with friends, and have other users have the option to bid or buyout their art piece. Buy unique artwork from artists across the globe! This website is designed to give artists a tool to be able to upload their artwork to their fanbase to view, like, and bid on to have an opportunity to add it to their art collection in real life and on their profile! Users have the ability to follow artists/users they like and view their art posts on their feed. Built with, Ruby-on-Rails, Bootstrap, Javascript, jQuery, HTML / CSS</p>
+                            <ul class="list-inline item-details">
+                                <li class="insidemodal">
+                                    <strong><a class="insidemodal" href="https://shrouded-thicket-68839.herokuapp.com/">Site Link</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a class="insidemodal" href="https://trello.com/b/47MlJ82w/wdi-p2">Trello</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a class="insidemodal" href="https://github.com/armanisani/project2">Git Hub</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-
-      <!-- Text input-->
-
-      <div class="form-group">
-        <label style="color: #a8c1ff " class="col-md-4 control-label">Phone #</label>
-          <div class="col-md-4 inputGroupContainer">
-          <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-        <input name="Phone" placeholder="(845)555-1212" class="form-control" type="text">
-          </div>
-        </div>
-      </div>
-
-      <!-- Text input-->
-
-      <div class="form-group">
-        <label style="color: #a8c1ff " class="col-md-4 control-label">Company</label>
-          <div class="col-md-4 inputGroupContainer">
-          <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-        <input name="Company" placeholder="Company" class="form-control" type="text">
-          </div>
-        </div>
-      </div>
-
-      <!-- Text input-->
-
-      <div class="form-group">
-        <label style="color: #a8c1ff " class="col-md-4 control-label">City</label>
-          <div class="col-md-4 inputGroupContainer">
-          <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-        <input name="City" placeholder="City" class="form-control"  type="text">
-          </div>
-        </div>
-      </div>
-
-      <!-- Select Basic -->
-
-      <div class="form-group">
-        <label style="color: #a8c1ff " class="col-md-4 control-label">State</label>
-          <div class="col-md-4 selectContainer">
-          <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-          <select name="State" class="form-control selectpicker" >
-            <option value=" " >Please select your state</option>
-            <option>Alabama</option>
-            <option>Alaska</option>
-            <option >Arizona</option>
-            <option >Arkansas</option>
-            <option >California</option>
-            <option >Colorado</option>
-            <option >Connecticut</option>
-            <option >Delaware</option>
-            <option >District of Columbia</option>
-            <option> Florida</option>
-            <option >Georgia</option>
-            <option >Hawaii</option>
-            <option >daho</option>
-            <option >Illinois</option>
-            <option >Indiana</option>
-            <option >Iowa</option>
-            <option> Kansas</option>
-            <option >Kentucky</option>
-            <option >Louisiana</option>
-            <option>Maine</option>
-            <option >Maryland</option>
-            <option> Mass</option>
-            <option >Michigan</option>
-            <option >Minnesota</option>
-            <option>Mississippi</option>
-            <option>Missouri</option>
-            <option>Montana</option>
-            <option>Nebraska</option>
-            <option>Nevada</option>
-            <option>New Hampshire</option>
-            <option>New Jersey</option>
-            <option>New Mexico</option>
-            <option>New York</option>
-            <option>North Carolina</option>
-            <option>North Dakota</option>
-            <option>Ohio</option>
-            <option>Oklahoma</option>
-            <option>Oregon</option>
-            <option>Pennsylvania</option>
-            <option>Rhode Island</option>
-            <option>South Carolina</option>
-            <option>South Dakota</option>
-            <option>Tennessee</option>
-            <option>Texas</option>
-            <option> Uttah</option>
-            <option>Vermont</option>
-            <option>Virginia</option>
-            <option >Washington</option>
-            <option >West Virginia</option>
-            <option>Wisconsin</option>
-            <option >Wyoming</option>
-          </select>
-        </div>
-      </div>
-      </div>
-
-      <!-- Text input-->
-
-      <div class="form-group">
-        <label style="color: #a8c1ff " class="col-md-4 control-label">Zip Code</label>
-          <div class="col-md-4 inputGroupContainer">
-          <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-        <input name="Zipcode" placeholder="Zip Code" class="form-control"  type="text">
-      </div>
-      </div>
-      </div>
-
-      <!-- Text input-->
-      <div class="form-group">
-        <label style="color: #a8c1ff " class="col-md-4 control-label">Website or domain name</label>
-         <div class="col-md-4 inputGroupContainer">
-          <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
-        <input name="Website" placeholder="Website or domain name" class="form-control" type="text">
-          </div>
-        </div>
-      </div>
-
-      <!-- radio checks -->
-       <div class="form-group">
-                              <label style="color: #a8c1ff " class="col-md-4 control-label">Looking to hire?</label>
-                              <div class="col-md-4">
-                                  <div class="radio">
-                                      <label>
-                                          <input type="radio" name="Hire" value="yes" /><p> Yes</p>
-                                      </label>
-                                  </div>
-                                  <div class="radio">
-                                      <label>
-                                          <input style="color: #a8c1ff " type="radio" name="Hire" value="no" /><p> No</p>
-                                      </label>
-                                  </div>
-                              </div>
-                          </div>
-
-      <!-- Text area -->
-
-      <div class="form-group">
-        <label style="color: #a8c1ff "class="col-md-4 control-label">Message Description</label>
-          <div class="col-md-4 inputGroupContainer">
-          <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-              	<textarea class="form-control" name="Message" placeholder="Message Description"></textarea>
-        </div>
-        </div>
-      </div>
-
-      <!-- Success message -->
-      <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting me, i will get back to you shortly.</div>
-      <?=$thankYou ?>
-      <!-- Button -->
-      <div class="form-group">
-        <label class="col-md-4 control-label"></label>
-        <div class="col-md-4">
-          <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
-        </div>
-      </div>
-
-      </fieldset>
-      </form>
-      </div>
-          </div><!-- /.container -->
     </div>
-  </div>
-
-  </div>
-  <div class="footer" style="background-color: rgb(28, 58, 94); width: 100%">
-    <div style="text-align: center; ">
-    <a href="https://github.com/armanisani"><img class="icon" src="./images/github.png" alt="" /></a>
-    <a href="https://www.linkedin.com/in/armansani?trk=nav_responsive_tab_profile"><img class="icon" src="./images/linkedin.png"></a>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2 class="insidemodal">Choose your own adventure game</h2>
+                            <hr class="star-primary">
+                            <img src="img/adventure.png" class="img-responsive img-centered" alt="">
+                            <p class="insidemodal">Attempt to escape a mysterious room by picking your own path and dealing with the consequences of your action as your story unfolds. Play against a friend and see who can survive longer down the maze of paths! The objective of the game is to choose a path that you find best to take you onto the next stage. After you pick a path an event will pop up explaining the consequences of your decision. Not all paths will lead you forward some will kill your player, damage him greatly, or lead you in the wrong direction. You can find weapons and supplies that will help you along the way with paths. Each stage you continue onto will reward you with 5 points to your score, and if you hit certain milestones you will be rewarded more points. After your player 1 dies, player 2 will start from the beginning. Once both players die, the winner will be determined base off who has the most points. Built with HTML5, CSS3, Javascript, Bootstrap, jQuery </p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <strong><a class="insidemodal" href="http://armanisani.github.io/Survive_Game/">Game link</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a class="insidemodal" href="https://trello.com/b/v5tNGLoW/wdi-p1">Trello</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a class="insidemodal" href="https://github.com/armanisani/Survive_Game">Github</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2 class="insidemodal" >Cart Mobile App</h2>
+                            <hr class="star-primary">
+                            <img src="img/app.png" class="img-responsive img-centered" alt="">
+                            <p class="insidemodal" >This mobile app helps connect independent business owners to customers around the world by working as a platform for business owners to be able to plug in their business for potential customers to see and buy. Built on MongoDB, Express, Angular, Node.js, Ionic Framework, jQuery, and Cordova</p>
+                            <ul class="list-inline item-details">
+                                <li class="insidemodal">*Under Construction*
+                                    <strong><a class="insidemodal" href="https://stark-wave-90063.herokuapp.com/">App link</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a class="insidemodal" href="https://trello.com/b/wpMCCTrl/cart">Trello</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a class="insidemodal" href="https://github.com/armanisani/cart-mobile-app">Github</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2 class="insidemodal" >Skedj | Day/night auto-planner</h2>
+                            <hr class="star-primary">
+                            <img src="img/skedj.png" class="img-responsive img-centered" alt="">
+                            <p class="insidemodal" >This website simplifies making itineraries by giving you realtime access to Yelp's api giving you a rundown of restaurant, bars, events, etc in your geolocated area. We give you an easy step by step process that lets you plug in what you want to our "sophisticated algorithm", and in return you receive the most ideal schedule combination of business based off of your needs & location. Built On MongoDB, Express, Node.js, jQuery, HTML/CSS, AJAX, Materalize, Yelp API, Google Maps API, Facebook API</p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <strong><a class="insidemodal" href="https://skedj.herokuapp.com/">Site Link</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a class="insidemodal" href="https://trello.com/b/afv84TWz/wdi-p3">Trello</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    <strong><a class="insidemodal" href="https://github.com/armanisani/skedgit">Github</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-  <script src="./index.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-  </body>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+    <!-- contact form -->
+    <script src="js/contact_me.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
+
+</body>
+
 </html>
