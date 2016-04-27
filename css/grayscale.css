@@ -3,6 +3,15 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+ .sicon {
+   padding: 0
+ }
+ .licon {
+   width: 50px
+ }
+ .fa-stack-2x  {
+   font-size: 20px
+ }
  #profile {
     /*width: 400px;*/
     height: 500px;
