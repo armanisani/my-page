@@ -20,7 +20,8 @@
     margin: 0 auto;
  }
  .insidemodal {
-   color: rgb(44, 62, 80)
+   color: rgb(44, 62, 80);
+   text-align: left
  }
  .icon {
   width: 50px;
