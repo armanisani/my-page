@@ -193,8 +193,9 @@ a:focus {
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
+    font-size: 45px;
     font-weight: bold;
+    font-family: 'Lobster', cursive;
 }
 
 @media(min-width:768px) {
@@ -208,7 +209,7 @@ a:focus {
     }
 
     .intro .intro-body .intro-text {
-        font-size: 26px;
+        font-size: 40px;
     }
 }
 
